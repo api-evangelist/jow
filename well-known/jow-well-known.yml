@@ -1,0 +1,12 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://jow.com/.well-known/*
+host: https://jow.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+# No .well-known discovery documents are published. Jow is a consumer
+# meal-planning app with no public developer/API surface; recorded here
+# for auditability. Empty result is expected, not a fabrication.

@@ -1,7 +1,27 @@
 aid: jow
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jow.png
 name: Jow
-description: 'Jow is a company surfaced as a portfolio company of northzone and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Jow is a consumer meal-planning and grocery-shopping application that
+  turns personalized menu selection into an automated shopping list. From a catalog
+  of thousands of recipes tailored to household size, dietary preferences and goals
+  (keto, vegetarian, high-protein, gluten-free, kid-friendly, low-calorie), Jow builds
+  a weekly menu and generates the matching grocery order, which users check out through
+  integrated grocery-retail partnerships at optimized prices. Founded in France and
+  available as iOS and Android mobile apps, Jow serves millions of active users. It
+  is a portfolio company of Northzone. No public developer API or documentation surface
+  was found during enrichment; this profile captures the company identity and its
+  probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/jow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Meal Planning
+- Grocery
+- Recipes
+- Food
+- Mobile App
+- Ecommerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jow-domain-security.yml
 - type: Website
   url: https://jow.com
+- type: Blog
+  url: https://jow.com/blog/
+- type: Support
+  url: https://jow.com/help
+- type: TermsOfService
+  url: https://jow.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://jow.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
